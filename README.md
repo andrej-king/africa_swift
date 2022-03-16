@@ -1,0 +1,1 @@
+# Africa - example `swift` project
