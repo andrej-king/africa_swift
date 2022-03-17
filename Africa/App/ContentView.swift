@@ -13,8 +13,7 @@ struct ContentView: View {
                     .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
             }
             .navigationBarTitle("Africe", displayMode: .large)
-        }
-         //: NAVIGATION
+        } //: NAVIGATION
     }
 }
 
