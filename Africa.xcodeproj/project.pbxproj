@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		554CC3DE27E4A4790036BA70 /* AnimalListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554CC3DD27E4A4790036BA70 /* AnimalListItemView.swift */; };
+		554CC3E027E4A8A60036BA70 /* AnimalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554CC3DF27E4A8A60036BA70 /* AnimalModel.swift */; };
 		55C12FEA27E286BF009444A4 /* AfricaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C12FE927E286BF009444A4 /* AfricaApp.swift */; };
 		55C12FEC27E286BF009444A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C12FEB27E286BF009444A4 /* ContentView.swift */; };
 		55C12FEE27E286C0009444A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55C12FED27E286C0009444A4 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		554CC3DD27E4A4790036BA70 /* AnimalListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListItemView.swift; sourceTree = "<group>"; };
+		554CC3DF27E4A8A60036BA70 /* AnimalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalModel.swift; sourceTree = "<group>"; };
 		55C12FE627E286BF009444A4 /* Africa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Africa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C12FE927E286BF009444A4 /* AfricaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfricaApp.swift; sourceTree = "<group>"; };
 		55C12FEB27E286BF009444A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				55C1302327E3CD03009444A4 /* CoverImageModel.swift */,
+				554CC3DF27E4A8A60036BA70 /* AnimalModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				55C1301E27E29126009444A4 /* MainView.swift in Sources */,
 				55C1302127E3C891009444A4 /* CoverImageView.swift in Sources */,
 				55C1302427E3CD03009444A4 /* CoverImageModel.swift in Sources */,
+				554CC3E027E4A8A60036BA70 /* AnimalModel.swift in Sources */,
 				55C1301A27E290D4009444A4 /* MapView.swift in Sources */,
 				55C12FEA27E286BF009444A4 /* AfricaApp.swift in Sources */,
 				55C1301827E2909F009444A4 /* VideoListView.swift in Sources */,
