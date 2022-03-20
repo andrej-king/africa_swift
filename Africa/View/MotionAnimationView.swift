@@ -4,6 +4,7 @@ struct MotionAnimationView: View {
     // MARK: - PROPERTIES
     
     @State private var randomCircle = Int.random(in: 12...16)
+    @State private var isAnimating: Bool = false
     
     // MARK: - FUNCTIONS
     
@@ -18,6 +19,10 @@ struct MotionAnimationView: View {
     }
     
     // 3. RANDOM SCALE
+    func randomScale() -> CGFloat {
+        return CGFloat(Double.random(in: 0.1...2.0))
+    }
+    
     // 4. RANDOM SPEED
     // 5. RANDOM DELAY
     
@@ -27,16 +32,24 @@ struct MotionAnimationView: View {
         GeometryReader { geometry in
             ZStack {
                 ForEach(0...randomCircle, id: \.self) { item in
-                    
-                    // This circle always will be in the center of any device
                     Circle()
                         .foregroundColor(.gray)
                         .opacity(0.15)
                         .frame(width: randomSize(), height: randomSize(), alignment: .center)
+                        .scaleEffect(isAnimating ? randomScale() : 1)
                         .position(
                             x: randomCoordinate(max: geometry.size.width),
                             y: randomCoordinate(max: geometry.size.height)
-                    )
+                        )
+                        .animation(
+                            Animation.interpolatingSpring(stiffness: 0.5, damping: 0.5)
+                                .repeatForever()
+                                .speed(2)
+                                .delay(1)
+                        )
+                        .onAppear(perform: {
+                            isAnimating = true
+                        })
                 } //: LOOP
                 
                 Text("Width: \(Int(geometry.size.width)) Height: \(Int(geometry.size.height))")
