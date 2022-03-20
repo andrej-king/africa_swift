@@ -5,6 +5,8 @@ struct VideoListView: View {
     
     @State var videos: [Video] = Bundle.main.decode("videos.json")
     
+    let hapticImpact = UIImpactFeedbackGenerator(style: .medium)
+    
     // MARK: - BODY
     
     var body: some View {
@@ -22,6 +24,7 @@ struct VideoListView: View {
                     Button(action: {
                         // Shuffle videos
                         videos.shuffle()
+                        hapticImpact.impactOccurred()
                     }) {
                         Image(systemName: "arrow.2.squarepath")
                     }
