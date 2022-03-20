@@ -40,7 +40,50 @@ struct MapView: View {
             MapAnnotation(coordinate: item.location) {
                 MapAnnotationView(location: item)
             }
-        })
+        }) //: MAP
+        .overlay(
+            HStack(alignment: .center, spacing: 12) {
+                Image("compass")
+                    .resizable()
+                    .scaledToFit()
+                .frame(width: 48, height: 48, alignment: .center)
+                
+                VStack(alignment: .leading, spacing: 3) {
+                    HStack {
+                        Text("Latitude:")
+                            .font(.footnote)
+                            .fontWeight(.bold)
+                            .foregroundColor(.accentColor)
+                        Spacer()
+                        Text("\(region.center.latitude)")
+                            .font(.footnote)
+                            .foregroundColor(Color.white)
+                    }
+                    
+                    Divider()
+                    
+                    HStack {
+                        Text("Longitude:")
+                            .font(.footnote)
+                            .fontWeight(.bold)
+                            .foregroundColor(.accentColor)
+                        Spacer()
+                        Text("\(region.center.longitude)")
+                            .font(.footnote)
+                            .foregroundColor(Color.white)
+                    }
+                }
+            } //: HSTACK
+                .padding(.vertical, 12)
+                .padding(.horizontal, 16)
+                .background(
+                    Color.black
+                        .cornerRadius(8)
+                        .opacity(0.6)
+                )
+                .padding()
+            , alignment: .top
+        )
     }
 }
 
