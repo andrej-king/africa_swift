@@ -24,6 +24,10 @@ struct MotionAnimationView: View {
     }
     
     // 4. RANDOM SPEED
+    func randomSpeed() -> Double {
+        return Double.random(in: 0.025...1.0)
+    }
+    
     // 5. RANDOM DELAY
     
     // MARK: - BODY
@@ -44,7 +48,7 @@ struct MotionAnimationView: View {
                         .animation(
                             Animation.interpolatingSpring(stiffness: 0.5, damping: 0.5)
                                 .repeatForever()
-                                .speed(2)
+                                .speed(randomSpeed())
                                 .delay(1)
                         )
                         .onAppear(perform: {
