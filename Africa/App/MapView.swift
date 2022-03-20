@@ -29,12 +29,17 @@ struct MapView: View {
             // MapMarker(coordinate: item.location, tint: .accentColor)
             
             // (C) CUSTOM BASIC ANNOTATION (it could be interactive)
+            // MapAnnotation(coordinate: item.location) {
+            //     Image("logo")
+            //         .resizable()
+            //         .scaledToFit()
+            //         .frame(width: 32, height: 32, alignment: .center)
+            // } //: ANNOTATION
+            
+            // (D) CUSTOM ADVANCED ANNOTATION (in could be interactive)
             MapAnnotation(coordinate: item.location) {
-                Image("logo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 32, height: 32, alignment: .center)
-            } //: ANNOTATION
+                MapAnnotationView(location: item)
+            }
         })
     }
 }
