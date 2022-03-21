@@ -60,6 +60,7 @@ struct GalleryView: View {
                             }
                     } //: LOOP
                 } //: GRID
+                .animation(.easeIn)//, value: gridColumn)
                 .onAppear(perform: {
                     gridSwitch()
                 })
