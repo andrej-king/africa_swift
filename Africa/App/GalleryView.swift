@@ -15,7 +15,15 @@ struct GalleryView: View {
     // ]
     
     // EFFICIENT GRID DEFINITION
-    let gridLayout: [GridItem] = Array(repeating: GridItem(.flexible()), count: 3)
+    // let gridLayout: [GridItem] = Array(repeating: GridItem(.flexible()), count: 3)
+    
+    // DYNAMIC GRID LAYOUT
+    @State private var gridLayout: [GridItem] = [GridItem(.flexible())]
+    @State private var gridColumn: Double = 3.0
+    
+    func gridSwitch() {
+        gridLayout = Array(repeating: .init(.flexible()), count: Int(gridColumn))
+    }
     
     // MARK: - BODY
     
@@ -29,6 +37,14 @@ struct GalleryView: View {
                     .scaledToFit()
                     .clipShape(Circle())
                     .overlay(Circle().stroke(Color.white, lineWidth: 8))
+                
+                // MARK: - SLIDER
+                
+                Slider(value: $gridColumn, in: 2...4, step: 1)
+                    .padding(.horizontal)
+                    .onChange(of: gridColumn, perform: { value in
+                        gridSwitch()
+                    })
                 
                 // MARK: - GRID
                 
@@ -44,6 +60,9 @@ struct GalleryView: View {
                             }
                     } //: LOOP
                 } //: GRID
+                .onAppear(perform: {
+                    gridSwitch()
+                })
             } //: VSTACK
             .padding(.horizontal, 10)
             .padding(.vertical, 50)
