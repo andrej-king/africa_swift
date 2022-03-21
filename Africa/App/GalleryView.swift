@@ -6,6 +6,7 @@ struct GalleryView: View {
     @State private var selectedAnimal: String = "lion"
     
     let animals: [Animal] = Bundle.main.decode("animals.json")
+    let haptics = UIImpactFeedbackGenerator(style: .medium)
     
     // SIMPLE FRID DEFINITION
     // let gridLayout: [GridItem] = [
@@ -57,10 +58,11 @@ struct GalleryView: View {
                             .overlay(Circle().stroke(Color.white, lineWidth: 1))
                             .onTapGesture {
                                 selectedAnimal = item.image
+                                haptics.impactOccurred()
                             }
                     } //: LOOP
                 } //: GRID
-                .animation(.easeIn)//, value: gridColumn)
+                .animation(.easeIn, value: gridColumn) // TODO with value not working
                 .onAppear(perform: {
                     gridSwitch()
                 })
