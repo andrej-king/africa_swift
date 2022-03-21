@@ -24,6 +24,12 @@ struct GalleryView: View {
             VStack(alignment: .center, spacing: 30) {
                 // MARK: - IMAGE
                 
+                Image(selectedAnimal)
+                    .resizable()
+                    .scaledToFit()
+                    .clipShape(Circle())
+                    .overlay(Circle().stroke(Color.white, lineWidth: 8))
+                
                 // MARK: - GRID
                 
                 LazyVGrid(columns: gridLayout, alignment: .center, spacing: 10) {
@@ -33,6 +39,9 @@ struct GalleryView: View {
                             .scaledToFit()
                             .clipShape(Circle())
                             .overlay(Circle().stroke(Color.white, lineWidth: 1))
+                            .onTapGesture {
+                                selectedAnimal = item.image
+                            }
                     } //: LOOP
                 } //: GRID
             } //: VSTACK
@@ -49,5 +58,6 @@ struct GalleryView: View {
 struct GalleryView_Previews: PreviewProvider {
     static var previews: some View {
         GalleryView()
+            .previewDevice("iPhone 13 Pro")
     }
 }
