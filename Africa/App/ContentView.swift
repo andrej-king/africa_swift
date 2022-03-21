@@ -4,6 +4,9 @@ struct ContentView: View {
     // MARK: - PROPERTIES
     
     let animals: [Animal] = Bundle.main.decode("animals.json")
+    let haptics = UIImpactFeedbackGenerator(style: .medium)
+    
+    @State private var isGridViewActive: Bool = false
     
     // MARK: - BODY
     
@@ -27,20 +30,24 @@ struct ContentView: View {
                     HStack(spacing: 16) {
                         // LIST
                         Button(action: {
-                          print("List view is activated")
+                            print("List view is activated")
+                            isGridViewActive = false
+                            haptics.impactOccurred()
                         }) {
                             Image(systemName: "square.fill.text.grid.1x2")
                                 .font(.title2)
-                                .foregroundColor(.accentColor)
+                                .foregroundColor(isGridViewActive ? .primary : .accentColor)
                         }
                         
                         // GRID
                         Button(action: {
                             print("Grid view is activated")
+                            isGridViewActive = true
+                            haptics.impactOccurred()
                         }) {
                             Image(systemName: "square.grid.2x2")
                                 .font(.title2)
-                                .foregroundColor(.primary)
+                                .foregroundColor(isGridViewActive ? .accentColor : .primary)
                         }
                     } //: HSTACK
                 } //: BUTTONS
