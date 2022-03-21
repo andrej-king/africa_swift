@@ -14,3 +14,7 @@
 <img src="readme-images/iPhone-13-pro-play-video-page.png" width="300">
 ---
 <img src="readme-images/iPhone-13-pro-national-park-locations.png" width="300">
+---
+<img src="readme-images/iPhone-13-pro-gallery-page-3-columns.png" width="300">
+---
+<img src="readme-images/iPhone-13-pro-gallery-page-4-columns.png" width="300">
