@@ -1,7 +1,13 @@
 # Africa - example `swift` project
 
 ## Screenshots `iPhone 13 Pro`
-<img src="readme-images/iPhone-13-pro-browse-page.png" width="300">
+<img src="readme-images/iPhone-13-pro-browse-page-list.png" width="300">
+---
+<img src="readme-images/iPhone-13-pro-browse-page-grid-1x2.png" width="300">
+---
+<img src="readme-images/iPhone-13-pro-browse-page-grid-2x2.png" width="300">
+---
+<img src="readme-images/iPhone-13-pro-browse-page-grid-3x2.png" width="300">
 ---
 <img src="readme-images/iPhone-13-pro-animal-details-page.png" width="300">
 ---
