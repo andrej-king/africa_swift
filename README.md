@@ -24,3 +24,8 @@
 <img src="readme-images/iPhone-13-pro-gallery-page-3-columns.png" width="300">
 ---
 <img src="readme-images/iPhone-13-pro-gallery-page-4-columns.png" width="300">
+
+## iMessage stickers
+<img src="readme-images/iPhone-13-Pro-stickers-dark.png" width="300">
+---
+<img src="readme-images/iPhone-13-Pro-stickers-light.png" width="300">
