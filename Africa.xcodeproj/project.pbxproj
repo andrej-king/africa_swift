@@ -50,6 +50,7 @@
 		55C1302727E3CFC7009444A4 /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1302627E3CFC7009444A4 /* CodableBundleExtension.swift */; };
 		55CF8FB627ECE23300D9E9B7 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55CF8FB527ECE23300D9E9B7 /* Stickers.xcassets */; };
 		55CF8FBA27ECE23300D9E9B7 /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 55CF8FB327ECE23200D9E9B7 /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		55CF8FC027ECEA2500D9E9B7 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF8FBF27ECEA2500D9E9B7 /* CreditsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,7 @@
 		55CF8FB327ECE23200D9E9B7 /* Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		55CF8FB527ECE23300D9E9B7 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		55CF8FB727ECE23300D9E9B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55CF8FBF27ECEA2500D9E9B7 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +246,7 @@
 				5538EF1A27E79121007EC508 /* MapAnnotationView.swift */,
 				5538EF1C27E7BD71007EC508 /* MotionAnimationView.swift */,
 				5512D5D527EA60CA003C9825 /* AnimalGridItemView.swift */,
+				55CF8FBF27ECEA2500D9E9B7 /* CreditsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				5512D5D627EA60CA003C9825 /* AnimalGridItemView.swift in Sources */,
 				554CC3E627E4E0A60036BA70 /* InsetGalleryView.swift in Sources */,
 				5538EF1227E758A3007EC508 /* VideoListItemView.swift in Sources */,
+				55CF8FC027ECEA2500D9E9B7 /* CreditsView.swift in Sources */,
 				55C1302727E3CFC7009444A4 /* CodableBundleExtension.swift in Sources */,
 				5538EF1D27E7BD71007EC508 /* MotionAnimationView.swift in Sources */,
 				554CC3E427E4DE920036BA70 /* HeadingView.swift in Sources */,
