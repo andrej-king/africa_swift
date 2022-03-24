@@ -51,6 +51,7 @@
 		55CF8FB627ECE23300D9E9B7 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55CF8FB527ECE23300D9E9B7 /* Stickers.xcassets */; };
 		55CF8FBA27ECE23300D9E9B7 /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 55CF8FB327ECE23200D9E9B7 /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		55CF8FC027ECEA2500D9E9B7 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF8FBF27ECEA2500D9E9B7 /* CreditsView.swift */; };
+		55CF8FC427ECECDC00D9E9B7 /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF8FC327ECECDC00D9E9B7 /* CenterModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +126,7 @@
 		55CF8FB527ECE23300D9E9B7 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		55CF8FB727ECE23300D9E9B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55CF8FBF27ECEA2500D9E9B7 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		55CF8FC327ECECDC00D9E9B7 /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 		55C12FE827E286BF009444A4 /* Africa */ = {
 			isa = PBXGroup;
 			children = (
+				55CF8FC227ECECBA00D9E9B7 /* Modifier */,
 				5538EF1527E778BC007EC508 /* Helper */,
 				55C1302527E3CEC0009444A4 /* Extension */,
 				55C1302227E3CC52009444A4 /* Model */,
@@ -277,6 +280,14 @@
 				55CF8FB727ECE23300D9E9B7 /* Info.plist */,
 			);
 			path = Stickers;
+			sourceTree = "<group>";
+		};
+		55CF8FC227ECECBA00D9E9B7 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				55CF8FC327ECECDC00D9E9B7 /* CenterModifier.swift */,
+			);
+			path = Modifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,6 +427,7 @@
 				55CF8FC027ECEA2500D9E9B7 /* CreditsView.swift in Sources */,
 				55C1302727E3CFC7009444A4 /* CodableBundleExtension.swift in Sources */,
 				5538EF1D27E7BD71007EC508 /* MotionAnimationView.swift in Sources */,
+				55CF8FC427ECECDC00D9E9B7 /* CenterModifier.swift in Sources */,
 				554CC3E427E4DE920036BA70 /* HeadingView.swift in Sources */,
 				5538EF1427E7773A007EC508 /* VideoPlayerView.swift in Sources */,
 			);
